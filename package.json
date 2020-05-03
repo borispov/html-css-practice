@@ -1,0 +1,21 @@
+{
+  "name": "noah",
+  "version": "1.0.0",
+  "description": "Noah - Best Decorations and Art For Your Home",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "css:watch": "npx postcss --watch ./lib/css/styles/main.css -o ./lib/css/main.css",
+    "css:build": "npx postcss ./lib/css/styles/main.css -o ./lib/css/main.css"
+  },
+  "author": "Boris Povolotsky",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^7.0.28",
+    "postcss-cli": "^7.1.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1"
+  }
+}

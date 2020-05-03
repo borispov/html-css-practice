@@ -1,0 +1,12 @@
+@custom-media --media-max-sm (max-width: 449px);
+@custom-media --media-min-sm (min-width: 450px);
+
+@custom-media --media-max-md (max-width: 674px);
+@custom-media --media-min-md (min-width: 675px);
+
+@custom-media --typography-breakpoint (min-width: 47rem);
+@custom-media --media-max-lg (max-width: 889px);
+@custom-media --media-min-lg (min-width: 900px);
+
+@custom-media --media-max-xl (max-width: 1349px);
+@custom-media --media-min-xl (min-width: 1350px);

@@ -1,0 +1,22 @@
+.btn {
+  padding: 0.5em 1em;
+  background: var(--color-primary);
+  color: var(--color-white);
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 2px -2px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-sm);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn--big {
+  padding: 0.75em 1.5em;
+  /* color: var(--color-secondary); */
+  font-size: var(--font-size-lg);
+}
+
+.btn:hover {
+  color: var(--color-secondary);
+}

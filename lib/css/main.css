@@ -1,0 +1,264 @@
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+}
+
+.normal {
+  margin: 0 16px;
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #32373e;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  color: hsl(0, 0%, 13%);
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.6;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container {
+  margin: 0 16px;
+  margin: 0 1rem;
+}
+
+@media (min-width: 47rem) {
+
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.normal-container {
+  composes: container;
+}
+
+@media (min-width: 47rem) {
+
+  .normal-container {
+    max-width: 60rem;
+    max-width: 60rem;
+  }
+}
+
+.narrow-container {
+  composes: container;
+}
+
+@media (min-width: 47rem) {
+
+  .narrow-container {
+    max-width: 30rem;
+    max-width: 40rem;
+  }
+}
+
+.btn {
+  padding: 0.5em 1em;
+  background: #47484d;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 2px -2px rgba(0, 0, 0, .1);
+          box-shadow: 0 0 2px -2px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn--big {
+  padding: 0.75em 1.5em;
+  /* color: var(--color-secondary); */
+  font-size: var(--font-size-lg);
+}
+
+.btn:hover {
+  color: #fc7d0e;
+}
+
+/* Navigation */
+
+header {
+  height: 68px;
+  width: 100%;
+  padding-top: 12px;
+  border-bottom: 2px solid #32373e;
+}
+
+.logo > h1 {
+  /* @apply --title1; */
+  font-size: 32px;
+  font-family: "PT Serif", serif;
+}
+
+.nav {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+@media (min-width: 675px) {
+
+  .nav {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 47em;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list {
+  margin-top: 8px;
+  display: none;
+  list-style-type: none;
+}
+
+@media (min-width: 450px) {
+
+  .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.list__link {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  margin-left: 12px;
+  margin-right: 12px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out
+}
+
+.list__link:hover {
+  color: #fc7d0e;
+}
+
+.menu-icon {
+  padding-top: 8px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+@media (min-width: 675px) {
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+.list--mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f8f9fa;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list--mobile > li > .list__link {
+  list-style-type: none;
+  padding: 24px;
+  font-weight: 700;
+  font-family: "PT Serif", serif !important;
+  font-size: 24px;
+}
+
+/* Hero Section */
+
+.hero {
+  height: 650px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero__img {
+  background-image: url("https://images.unsplash.com/photo-1553881651-43348b2ca74e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-position: 50% 50%;
+  background-color: rgba(0, 0, 0, .6);
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 100%;
+}
+
+.hero__overlay {
+  /* background: rgba(0, 0, 0, 0.6); */
+}
+
+.hero__title {
+  font-size: 49px;
+  line-height: 57px;
+}
+
+.hero__title {
+  padding-top: 6em;
+  font-size: 49px;
+  line-height: 57px;
+  color: #fff;
+}
+
+.hero__subtitle {
+  font-size: 21px;
+  line-height: 30px;
+  padding-top: 4px;
+  padding-bottom: 24px;
+  color: #f8f9fa;
+  font-weight: 500;
+}

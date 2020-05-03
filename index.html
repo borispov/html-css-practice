@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Boris Povolotsky" />
+    <link rel="stylesheet" href="./lib/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700|PT+Serif:700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Noah</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <h1>Noah's</h1>
+        </div>
+        <ul class="list">
+          <li><a class="list__link" href="#">Home</a></li>
+          <li><a class="list__link" href="#">About</a></li>
+          <li><a class="list__link" href="#">Products</a></li>
+          <li><a class="list__link" href="#">Catalog</a></li>
+        </ul>
+        <div class="menu-icon">
+          <svg
+            fill="#000000"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 26 26"
+            width="22px"
+            height="22px"
+          >
+            <path
+              d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero hero__overlay">
+      <div class="hero__img">
+        <h1 class="hero__title">Decorate Your Soul</h1>
+        <h3 class="hero__subtitle">
+          Choose Art For Home Among Best-selling Designs
+        </h3>
+        <button class="btn btn--big">Shop Now</button>
+      </div>
+    </section>
+
+    <main>
+      <h2 class="section-title"></h2>
+    </main>
+  </body>
+  <script>
+    const clickHandler = () => {
+      const list = document.querySelector(".list");
+      list.classList.toggle("list--mobile");
+    };
+    const menu = document.querySelector(".menu-icon");
+    menu.addEventListener("click", clickHandler);
+  </script>
+</html>

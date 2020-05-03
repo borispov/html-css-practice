@@ -1,0 +1,125 @@
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+}
+
+.normal {
+  margin: 0 1rem;
+}
+
+:root {
+  --color-primary: #47484d;
+  --color-secondary: #fc7d0e;
+  --color-red: #cf5820;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-onPrimary: #d3d3d3;
+  --color-light: #f8f9fa;
+  --color-dark: #343a30;
+  --color-success: #28a745;
+  --color-dark-gray: #32373e;
+  --color-gray: #798492;
+
+  --color-text-primary: hsl(0, 0%, 13%);
+  --color-text-secondary: hsl(0, 0%, 21%);
+  --color-text-disabled: hsl(0, 0%, 43%);
+
+  --narrow-container: 40rem;
+  --wide-container: 60rem;
+
+  --width-xs: 20em;
+  --width-sm: 40em;
+  --width-md: 60em;
+  --width-lg: 80em;
+  --width-xl: 100em;
+
+  --font-size-base: 16px;
+  --font-size-micro: 10px;
+  --font-size-small: 12px;
+  --font-size-large: 18px;
+
+  --line-height-micro: 12px;
+  --line-height-small: 21px;
+  --line-height-base: 24px;
+  --line-height-large: 27px;
+
+  --title3-size: 21px;
+  --title3-line-height: 30px;
+  --title2-size: 24px;
+  --title2-line-height: 33px;
+  --title1-size: 49px;
+  --title1-line-height: 57px;
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --title1: {
+    font-size: var(--title1-size);
+    line-height: var(--title1-line-height);
+  }
+  --title2: {
+    font-size: var(--title2-size);
+    line-height: var(--title2-line-height);
+  }
+  --title3: {
+    font-size: var(--title3-size);
+    line-height: var(--title3-line-height);
+  }
+
+  --ff-serif: "PT Serif", serif;
+  --ff-sans: "Catamaran", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark-gray);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  color: var(--color-text-primary);
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.6;
+}
+
+@custom-selector :--enter :hover, :focus;
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  margin: 0 1rem;
+
+  @media (--typography-breakpoint) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.normal-container {
+  composes: container;
+
+  @media (--typography-breakpoint) {
+    max-width: var(--wide-container, 60rem);
+  }
+}
+
+.narrow-container {
+  composes: container;
+
+  @media (--typography-breakpoint) {
+    max-width: var(--narrow-container, 30rem);
+  }
+}

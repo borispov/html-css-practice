@@ -1,0 +1,123 @@
+@import "./global.css";
+@import "./media.css";
+@import "./utils.css";
+
+/* Navigation */
+header {
+  height: 68px;
+  width: 100%;
+  padding-top: 12px;
+  border-bottom: 2px solid var(--color-dark-gray);
+}
+
+.logo > h1 {
+  /* @apply --title1; */
+  font-size: 32px;
+  font-family: var(--ff-serif);
+}
+
+.nav {
+  margin-left: 12px;
+  margin-right: 12px;
+  @media (--media-min-md) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 47em;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  margin-top: 8px;
+  display: none;
+  list-style-type: none;
+  @media (--media-min-sm) {
+    display: flex;
+  }
+}
+
+.list__link {
+  font-family: var(--ff-sans);
+  font-weight: 500;
+  display: inline-block;
+  margin-left: 12px;
+  margin-right: 12px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--color-secondary);
+  }
+}
+
+.menu-icon {
+  padding-top: 8px;
+  z-index: 999;
+  cursor: pointer;
+  @media (--media-min-md) {
+    display: none;
+  }
+}
+
+.list--mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex !important;
+  flex-direction: column;
+  background-color: var(--color-light);
+  justify-content: center;
+  align-items: center;
+}
+
+.list--mobile > li > .list__link {
+  list-style-type: none;
+  padding: 24px;
+  font-weight: 700;
+  font-family: var(--ff-serif) !important;
+  font-size: var(--title2-size);
+}
+
+/* Hero Section */
+
+.hero {
+  height: 650px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero__img {
+  background-image: url("https://images.unsplash.com/photo-1553881651-43348b2ca74e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-position: 50% 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 100%;
+}
+
+.hero__overlay {
+  /* background: rgba(0, 0, 0, 0.6); */
+}
+
+.hero__title {
+  @apply --title1;
+}
+
+.hero__title {
+  padding-top: 6em;
+  @apply --title1;
+  color: var(--color-white);
+}
+.hero__subtitle {
+  @apply --title3;
+  padding-top: 4px;
+  padding-bottom: 24px;
+  color: var(--color-light);
+  font-weight: 500;
+}
