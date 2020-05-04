@@ -45,9 +45,9 @@ h4 {
   --line-height-base: 24px;
   --line-height-large: 27px;
 
-  --title3-size: 21px;
+  --title3-size: 24px;
   --title3-line-height: 30px;
-  --title2-size: 24px;
+  --title2-size: 30px;
   --title2-line-height: 33px;
   --title1-size: 49px;
   --title1-line-height: 57px;
@@ -70,6 +70,10 @@ h4 {
 
   --ff-serif: "PT Serif", serif;
   --ff-sans: "Catamaran", sans-serif;
+
+  --shadow-md: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+
+
 }
 
 a {
