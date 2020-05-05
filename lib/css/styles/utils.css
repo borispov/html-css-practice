@@ -20,3 +20,13 @@
 .btn:hover {
   color: var(--color-secondary);
 }
+
+
+hr {
+  max-width: 16rem;
+  color: var(--color-light);
+  @media (--media-min-md) {
+    max-width: 32rem;
+  }
+  margin: 0 auto;
+}
